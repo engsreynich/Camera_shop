@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css">
+    <style>
+      
+      .hero {
+        background: url("/img/background.jpg") center/cover no-repeat;
+        height: 60vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .hero h1 {
+        color: #fff;
+        z-index: 1;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      }
+      section p {
+        text-align: justify;
+        color: #555;
+      }
+      img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      footer {
+        background-color: #343a40;
+        color: #ddd;
+        padding: 20px;
+      }
+      footer a {
+        color: #ddd;
+        margin: 0 10px;
+        text-decoration: none;
+      }
+      footer a:hover {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="/img/logo.png"
+            alt="CameraShop Logo"
+            class="me-2"
+            style="height: 40px"
+          />
+          <span>CameraShop</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>Welcome to CameraShop</h1>
+    </div>
+
+    <!-- About Section -->
+    <main>
+      <section class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">About Us</h2>
+          <p>
+            Welcome to CameraShop, your trusted destination for high-quality
+            cameras and accessories. We are passionate about photography and aim
+            to provide our customers with the best tools to capture their most
+            precious moments.
+          </p>
+          <p>
+            Our mission is to offer premium products at affordable prices while
+            ensuring excellent customer service. Whether you're a professional
+            photographer or a hobbyist, we've got the perfect camera for you.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <p>&copy; 2025 CameraShop. All rights reserved.</p>
+      <p>
+        <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+      </p>
+    </footer>
+   
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECommerce Shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="/img/logo.png"
+              alt="CameraShop Logo"
+              class="me-2"
+              style="height: 40px"
+            />
+            <span>CameraShop</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <header class="bg-dark text-white text-center py-5 position-relative">
+        <!-- Background Image -->
+        <img
+          src="/img/background.jpg"
+          alt="Background"
+          class="w-100 h-100 position-absolute top-0 start-0"
+          style="object-fit: cover; z-index: -1; opacity: 0.5"
+        />
+
+        <!-- Content -->
+        <div class="container">
+          <h1 class="display-4">Welcome to CameraShop</h1>
+          <p class="lead">Find the best cameras at unbeatable prices!</p>
+        </div>
+      </header>
+
+      <!-- products -->
+      <section id="products" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">Our Products</h2>
+          <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img
+                  src="/img/sony.png"
+                  class="card-img-top"
+                  alt="Sony Camera"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Sony Camera</h5>
+                  <p class="card-text">$299</p>
+                  <button
+                    class="btn btn-primary add-to-cart"
+                    data-name="Sony Camera"
+                    data-price="299"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img
+                  src="/img/LEICA.png"
+                  class="card-img-top"
+                  alt="Leica Camera"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Leica Camera</h5>
+                  <p class="card-text">$499</p>
+                  <button
+                    class="btn btn-primary add-to-cart"
+                    data-name="Leica Camera"
+                    data-price="499"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img
+                  src="/img/vintage german camera.png"
+                  class="card-img-top"
+                  alt="Vintage Camera"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Vintage German Camera</h5>
+                  <p class="card-text">$399</p>
+                  <button
+                    class="btn btn-primary add-to-cart"
+                    data-name="Vintage German Camera"
+                    data-price="399"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="/img/canon.jpg" class="card-img-top" alt="Camera" />
+                <div class="card-body text-center">
+                  <h5 class="card-title">canon Camera</h5>
+                  <p class="card-text">$599</p>
+                  <button
+                    class="btn btn-primary add-to-cart"
+                    data-name="Classic Camera"
+                    data-price="299"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img
+                  src="https://i.pinimg.com/736x/51/e9/9e/51e99ee88da66863c52270798df37bae.jpg"
+                  class="card-img-top"
+                  alt="Camera"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">canon Camera</h5>
+                  <p class="card-text">$599</p>
+                  <button
+                    class="btn btn-primary add-to-cart"
+                    data-name="Classic Camera"
+                    data-price="299"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="/img/LEICA.png" class="card-img-top" alt="Camera" />
+                <div class="card-body text-center">
+                  <h5 class="card-title">canon Camera</h5>
+                  <p class="card-text">$599</p>
+                  <button
+                    class="btn btn-primary add-to-cart"
+                    data-name="Classic Camera"
+                    data-price="299"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cart" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-4">Your Cart</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="cart-items">
+              <tr>
+                <td colspan="3" class="text-center">Your cart is empty</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="text-center">
+        <p>&copy; 2025 CameraShop. All rights reserved.</p>
+        <p>
+          <a href="#">Facebook</a> | <a href="#">Instagram</a> |
+          <a href="#">Twitter</a>
+        </p>
+      </footer>
+
+      <script src="/script.js"></script>
+    </main>
+  </body>
+</html>
